@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.father-box{
+    margin: 20px;
+    padding: 20px;
+    overflow: hidden;
+    background-color: #eee;
+    border: 1px solid #999;
+    width: 94.9%;
+}
+.fir-son{
+    padding:20px;
+    background-color: #ffffff;
+    border: 1px solid #999;
+    float: left;
+    width: 10.57%;
+}
+.img1{
+    padding: 20px;
+    font-size:11px;
+    border:1px solid #999;
+    float: left;
+    height: 40px;
+    width: 40px;
+    background-color: #dfdfdf;
+}
+.img1 p{
+    width: 50px;
+}
+.word1{
+    margin-left: 20px;
+    font-size:13px;
+    width: 58px;
+    float: left;
+}
+.sec-son{
+    padding: 20px;
+    margin-left:20px;
+    background-color: #ffffff;
+    border: 1px solid #999;
+    width: 73.05%;
+    float: left;
+}
+.thi-son{
+    margin-left: 20px;
+    padding: 20px;
+    overflow: hidden;
+    background-color: #ffffff;
+    border: 1px solid #999;
+    width: 5.29%;
+    float: left;
+}
+.img2,.img3,.img4,.img5{
+    margin:0 0 20px 0;
+    float: left;
+    padding: 20px;
+    font-size:11px;
+    border:1px solid #999;
+    height: 40px;
+    width: 40px;
+    background-color: #dfdfdf;
+}
+.thi-son p{
+    width:50px;
+}
+.img5{
+    margin-bottom: 0;
+}
