@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>定位和居中2</title>
+    <style type="text/css">
+        *{
+            padding: 0px;
+            margin: 0px;
+            /*position: relative;*/
+        }
+        .container{
+            width: 400px;
+            height: 200px;
+            background-color: #cccccc;
+            position: absolute;
+            margin:auto;
+            top:0;
+            bottom:0;
+            left:0;
+            right:0;
+        }
+        .top-left {
+            position: absolute;
+            left:0;
+            top:0;
+            width: 50px;
+            height: 50px;
+            background-color: #fc0;
+            border-radius:0 0 50px 0;
+        }
+        .bottom-right{
+            position: absolute;
+            bottom:0;
+            right:0;
+            width: 50px;
+            height:50px;
+            background-color: #fc0;
+            border-radius:50px 0 0 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="top-left">
+        </div>
+        <div class="bottom-right">
+        </div>
+    </div>
+</body>
+</html>
