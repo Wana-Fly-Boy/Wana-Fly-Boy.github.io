@@ -1,0 +1,87 @@
+/*初始化css*/
+/*去掉标签的默认margin和padding*/
+html {
+    min-width: 1519px;
+}
+html,body,ul,li,p,h1,h2,h3,form,img {
+    margin: 0;
+    padding: 0;
+}
+/*去掉图片的边框*/
+img {
+    border: 0;
+}
+/*去掉列表的小点*/
+ul,ol {
+    list-style: none;
+}
+/*去掉input标签默认的padding-top/bottom,border*/
+
+select{
+    border:none;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+::selection {
+    text-decoration: none;
+}
+input:focus {
+    outline: none;
+    border: 1px solid #7F4A88;    
+}
+/*去掉a标签的下划线*/
+a {
+    text-decoration: none;
+    color: #000000;
+}
+/*给body设置一个统一的字体样式和背景颜色*/
+body {
+    min-width: 1440px;
+    /* min-height:1000px; */
+    font-family: myFont;
+    /*color: #FFFFFF;*/
+}
+@font-face {
+    font-family: myFont;
+    src:url("../font/PingFang SC Regular.ttf");
+    /*src: local('fontName Regular');*/
+    /*url('fontName.woff')format('woff');*/
+    /*url('fontName.ttf')format('truetype');*/
+    /*url('fontName.svg#fontName')format('svg');*/
+}
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+.clearfix:after {
+    content:"";
+    height: 0;
+    line-height: 0;
+    display: block;
+    visibility: hidden;
+    clear: both;
+}
+.clearfix {
+    zoom: 1;
+}
+.pointer {
+    cursor: pointer;
+}
+input::-webkit-input-placeholder {
+    color: rgba(255,255,255,0.7);
+    opacity: 1;
+    /*
+    font-size:14px;
+    color:#FFF;
+    */
+}
+input::-moz-placeholder {
+    color: rgba(255,255,255,0.7);
+    opacity: 1;
+    /*
+    font-size:14px;
+    color:#FFF;
+    */
+}

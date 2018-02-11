@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>登录注册页面</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/login_register.css">
+</head>
+<body>
+    <div class="container">
+        <div class="con_header">
+            <!--另外的解决方案-->
+            <!--<a href="#">-->
+                <!--<span>悦读项目</span>-->
+            <!--</a>-->
+            <p class="guide" ><span id="t_APIS" class="pointer">APIS</span><span id="t_line">|</span><span id="t_read" class="pointer">悦读项目</span> </p>
+        </div>
+        <div class="con_content">
+            <div class="form">
+                <!--比较好的解决方案-->
+                <!--<div class="login-title">-->
+                    <!--<a href="#">登录</a>-->
+                    <!--<a href="#">注册</a>-->
+                <!--</div>-->
+                <div class="box">
+                    <a href="#" id="btn_click_log" style="color:rgba(255,255,255,0.5);">登录</a>
+                    <a href="#" id="btn_click_reg" style="color: #7F4A88;border-bottom: 2px solid #7F4A88">注册</a>
+                </div>
+                <form id="register" action="#">
+                    <div class="reg_input">
+                        <input type="text" placeholder="请输入手机号码" name="phone" id="phone">
+                    </div>
+                    <div class="reg_input code">
+                        <input type="text" placeholder="请输入短信验证码" name="code" id="code">
+                        <input type="button" value="获取验证码" id="btn" class="pointer">
+                    </div>
+                    <div class="reg_input">
+                        <input type="password" placeholder="6~32位密码" name="pwd" id="pwd">
+                    </div>
+                    <div class="reg_input">
+                        <input type="password" placeholder="重复密码" name="pwd_r" id="pwd_r">
+                    </div>
+                    <div class="reg_input">
+                        <input type="button" value="注册" id="btn_submit" class="pointer" style="background-color: #7F4A88">
+                    </div>
+                    <a href="#" id="aColor">已有账户，马上登录</a>
+                </form>
+                <form action="" id="login" style="display: none;">
+                    <div class="log_input">
+                        <input type="text" placeholder="请输入登录账号" name="num" id="num">
+                    </div>
+                    <div class="log_input">
+                        <input type="password" placeholder="请输入登录密码" name="pwd_log" id="pwd_log">
+                    </div>
+                    <div class="log_input">
+                        <input type="button" value="登录" class="pointer" id="log_btn" style="background-color: #7F4A88">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="con_footer">
+            <a class="CopyRight">Copyright © 2017 apis.sh All Rights Reserved | 陕ICP备15013925号-3</a>
+        </div>
+    </div>
+</body>
+<script src="js/base.js"></script>
+<script src="js/ajax.js"></script>
+<script src="js/login_register.js"></script>
+</html>
+
+<!--整理逻辑，验证函数封装-->
+<!--获取验证码按钮高亮，验证码时效-->
+<!--获取后验证是否输入正确验证码-->
+<!--注册完毕点击跳转登录页面-->
+<!--同一个页面没必要跳转window.location.href = 'login.html'; 或者action但是提交后实际上url拼接了字符串-->
+<!--判断加return语句可以提前结束-->
+<!--不需要提交,提交表单后会将字符拼接-->
+<!--注册成功后本地存储返回重要数据-->
+<!--用户凭证保存-->
+<!--含糊错误提示，防止暴力破解-->
+<!--多个js文件，基础js文件，公用函数方法等-->
+<!--}-->
+
+<!--ajax中，xhr.responseType = 'json';-->
+<!--可以将响应类型强制转换为json类型-->
+<!--所以可以不用将字符串转换为对象。-->

@@ -1,0 +1,99 @@
+/*1设置meta标签、 大多数移动浏览器将HTML页面放大为宽的视图（viewport）以符合屏幕分辨率。
+你可以使用视图的meta标签来进行重置。下面的视图标签告诉浏览器，使用设备的宽度作为视图宽度并禁止初始的缩放。
+在<head>标签里加入这个meta标签。 */
+/* <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"> */
+
+/* 2、通过媒体/介查询来设置样式Media Queries */
+@media screen and(max-width:980px) {
+    /* 这里的样式就会覆盖上面已经定义好的样式 */
+
+}
+/* 3、设置多种视图跨密度宽度 */
+/* ipad */
+@media only screen and (min-width:768px) and (max-width:1024px){
+
+}
+/* iphone */
+@media only screen and (min-width:320px) and (max-width:767px){
+
+}
+
+/* 宽度要使用百分比 */
+
+
+/* 处理图片 */
+/* 图片使用百分比会影响图片显示效果，可以给图片指定最大宽度为百分比，假如图片超过了，就缩小。假如图片小了就原尺寸输出。 */
+img {
+    width: auto;
+    max-width: 100%;
+}
+
+
+/* ::before & ::after */
+/* <img src="image.jpg" data-src-600px="image-600px.jpg" data-src-800px="image-800px.jpg" alt=""> */
+@media (min-device-width:600px) {
+    img[data-src-600px] {
+        content:attr(data-src-600px,url);
+    }
+}
+@media (min-device-width:800px) {
+    img[data-src-800px] {
+        content:attr(data-src-800px,url);
+    }
+}
+
+
+/* 例如：pre,iframe,video等，都需要和img一样控制好宽度。对于table建议不要增加padding属性 */
+table th,table td {
+    padding: 0 0;
+    text-align: center;
+}
+
+
+@media only screen and
+
+only(限定某种设备)
+screen 是媒体类型里的一种
+and 被称为关键字，其他关键字还包括 not(排除某种设备)
+
+/* 常用类型 */
+类型 解释
+all 所有设备
+braille 盲文
+embossed 盲文打印
+handheld 手持设备
+print 文档打印或打印预览模式
+projection 项目演示，比如幻灯
+screen 彩色电脑屏幕
+speech 演讲
+tty 固定字母间距的网格的媒体，比如电传打字机
+tv 电视
+
+screen一般用的比较多，下面是我自己的尝试，列出常用的设备的尺寸，然后给页面分了几个尺寸的版本。
+
+/* 常用设备 */
+设备 屏幕尺寸
+显示器 1280 x 800
+ipad 1024 x 768
+Android 800 x 480
+iPhone 640 x 960
+
+两种方式
+
+a：
+
+<link rel="stylesheet" type="text/css" href="styleB.css" media="screen and (min-width: 600px) and (max-width: 800px)">
+意思是当屏幕的宽度大于600小于800时，应用styleB.css
+
+b：
+
+@media screen and (max-width: 600px) {  /*当屏幕尺寸小于600px时，应用下面的CSS样式*/
+  .class {
+    background: #ccc;
+  }
+}
+/* device-aspect-ratio */
+
+/* device-aspect-ratio可以用来适配特定屏幕长宽比的设备，这也是一个很有用的属性，比如，我们的页面想要对长宽比为4:3的普通屏幕定义一种样式，然后对于16:9和16:10的宽屏，定义另一种样式，比如自适应宽度和固定宽度： */
+
+/* @media only screen and (device-aspect-ratio:4/3) */

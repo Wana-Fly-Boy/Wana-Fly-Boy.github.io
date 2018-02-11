@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>修改密码</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/modifyPwd.css">
+</head>
+<body>
+    <div class="container">
+        <div class="con_header">
+            <p class="guide" ><span id="t_APIS" class="pointer">APIS</span><span id="t_line">|</span><span id="t_read" class="pointer">悦读项目</span> </p>
+        </div>
+        <div class="con_content">
+            <div class="title_modify">
+                <span>账户设置&nbsp;&nbsp;&nbsp;/<span>修改密码</span></span>
+            </div>
+            <div class="form">
+                <div class="title_fp">
+                    <span>修改密码</span>
+                </div>
+                <form id="register" action="#">
+                    <div class="reg_input">
+                        <input type="text" placeholder="请输入手机号码" name="phone" id="phone">
+                    </div>
+                    <div class="reg_input code">
+                        <input type="text" placeholder="请输入短信验证码" name="code" id="code">
+                        <input type="button" value="获取验证码" id="btn" class="pointer">
+                    </div>
+                    <div class="reg_input">
+                        <input type="password" placeholder="请输入新密码" name="pwd" id="pwd">
+                    </div>
+                    <div class="reg_input">
+                        <input type="password" placeholder="重复密码" name="pwd_r" id="pwd_r">
+                    </div>
+                    <div class="reg_input">
+                        <input type="button" value="确认" id="btn_submit" class="pointer" style="background-color: rgba(34,38,41,0.7);color: #FFFFFF;">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/base.js"></script>
+<script src="js/ajax.js"></script>
+<script src="js/modifyPwd.js"></script>
+</html>

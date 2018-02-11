@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>账户设置</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/userSet.css">
+</head>
+<body>
+    <div class="container">
+        <div class="con_header">
+            <div class="guide">
+                <div class="title_l fl">
+                    <span id="t_APIS" class="pointer fl">APIS</span><span id="t_line" class="fl">|</span><span id="t_read" class="pointer fl">悦读项目</span>
+                </div>
+                <div class="title_r fr">
+                    <span id="log" class="pointer">登录</span>
+                    <span id="reg" class="pointer">注册</span>
+                    <image id="write" src="images/icon_write.png" class="pointer"></image>
+                    <a id="w_article" class="pointer" href="writeArticle.html">写文章</a>
+                    <!-- <div class="test_triangle_border" id="tag">
+                        <div class="popup">
+                            <span><em></em></span>
+                            <ul>
+                                <li><image src="images/icon_user.png"></image><a href="personal.html">个人中心</a></li>
+                                <li><image src="images/icon_setting.png"></image><a href="userSet.html">账户设置</a></li>
+                                <li><image src="images/icon_exit.png"></image><a href="login_register.html">退出登录</a></li>
+                            </ul>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <p>账户设置</p>
+            <div class="settings">
+                <form action="">
+                    <div id="head" class="formSet">
+                        <span>头像：</span>
+                        <image src="images/4.png" id="img"></image>
+                        <label for="file_img" id="label_img" class="pointer">
+                            <input type="file" id="file_img">
+                            <span>上传头像</span>
+                        </label>
+                    </div>
+                    <div id="name" class="formSet">
+                        昵称：<input type="text" placeholder="吕璐璐璐" id="_name">
+                    </div>
+                    <div id="sex" class="formSet">
+                        <!--name属性一致，即可使按钮只会选定一个-->
+                        性别：<input type="radio" class="formSet_l" name="sex" checked id="man">男<input type="radio" id="woman" class="formSet_l" name="sex">女
+                    </div>
+                    <div id="star" class="formSet">
+                        星座：
+                        <select name="select_star" class="ml" id="starList">
+                        </select>
+                    </div>
+                    <div id="place" class="formSet">
+                        城市：
+                        <select name="select_province" id="select_province" class="ml">
+                            <!--<option value="1">中单</option>-->
+                            <!--<option value="2">打野</option>-->
+                            <!--<option value="3">上单</option>-->
+                        </select>
+                        <select name="select_city" id="select_city" class="ml_l">
+                        </select>
+                    </div>
+                    <div id="area" class="formSet">
+                        <select name="select_area" id="select_area" class="ml_ll">
+                        </select>
+                    </div>
+                    <div id="pwd" class="formSet">
+                        密码：<input type="password">
+                    </div>
+                    <div id="submit" class="formSet">
+                        <input type="button" value="确&nbsp;&nbsp;定" id="btn_submit" class="pointer"/>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="con_footer">
+            <a class="CopyRight">Copyright © 2017 apis.sh All Rights Reserved | 陕ICP备15013925号-3</a>
+        </div>
+    </div>
+</body>
+<script src="js/base.js"></script>
+<script src="./js/ajax.js"></script>
+<script src="js/userSet.js"></script>
+</html>
+
+<!--// var obj = {-->
+<!--//     1:['疾风剑豪','小鱼人','马尔扎哈','影流之主','不祥之刃'],-->
+<!--//     2:['盲僧','剑圣','贾克斯','螳螂','影流之镰'],-->
+<!--//     3:['诺克萨斯之手','德玛西亚之力','蛮族之王','刀锋意志','放逐之刃','未来守护者']-->
+<!--// };-->
+<!--<label for="file_img">-->
+    <!--<input type="file" id="file_img">-->
+    <!--<span>上传文件</span>-->
+<!--</label>-->
+<!--<style>-->
+    <!--#file_img {-->
+        <!--position: relative;-->
+        <!--left: -999999px;-->
+    <!--}-->
+    <!--#div_img img{-->
+        <!--border: 1px solid #666;-->
+        <!-- -webkit-border-radius: 50%;-->
+        <!-- -moz-border-radius: 50%;-->
+        <!--border-radius: 50%;-->
+        <!--height: 50px;-->
+        <!--width: 50px;-->
+    <!--}-->
+<!--</style>-->
+
+
+
+
+
+

@@ -1,0 +1,146 @@
+body {
+    width: 100%;
+    height: 1000px;
+}
+.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /*margin: 10.4% 10.3% 1.8% 10.4%;*/
+    background: url("../images/bg_signin.jpg") no-repeat;
+    background-size: 100% auto;
+}
+.container .con_header {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgba(127,74,136,0.3);
+    height: 5.9%;
+    line-height: 60px;
+    width: 100%;
+    color: #FFFFFF;
+    /*opacity: 0.8;*/
+    box-shadow: 2px 2px 4px 0 rgba(0,0,0,0.20);
+}
+.container .con_header .guide {
+    /*float: left;*/
+    /*width: 100%;*/
+    height: 60px;
+    line-height: 60px;
+    overflow: hidden;
+}
+.container #t_APIS {
+    display: inline-block;
+    width: 5.4%;
+    height: 2.5%;
+    margin-left: 2.7%;
+    font-size: 27px;
+    font-weight: bolder;
+}
+.container #t_line {
+    width: 0.1%;
+    height: 2.3%;
+    font-size: 27px;
+    margin-left: 1.3%;
+}
+.container #t_read {
+    display: inline-block;
+    margin-left: 2.3%;
+    /*margin-top: 1.4%;*/
+    width: 7.6%;
+    height: 3.2%;
+    /*line-height: 3.2%;*/
+    font-family: PingFangSC-Regular;
+    font-size: 24px;
+    letter-spacing: 0;
+}
+.container .con_content {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    height: 88.2%;
+}
+.container .con_content .form {
+    /*居中方案*/
+    position: absolute;
+    /*margin-top: -24.9%;*/
+    /*margin-left: -19.7%;*/
+    /*top: 50%;*/
+    /*left: 50%;*/
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 30%;
+    height: 50%;
+    padding: 50px;
+    /*opacity: 0.4;*/
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 15px;
+    color: #FFFFFF;
+    text-align: center;
+}
+.container .form #btn_click_log,#btn_click_reg{
+    font-size: 24px;
+    padding: 14px 14px 6px 14px;
+    text-align: center;
+}
+.container .form .reg_input,.log_input {
+    text-align: center;
+    padding: 5px;
+}
+.container .form input{
+    border: 1px solid #7F4A88;
+    border-radius: 5px;
+    text-indent: 7px;
+    width: 410px;
+    height: 42px;
+    margin-top: 18px;
+    background-color: transparent;
+    color: #FFFFFF;
+    font-size: 14px;
+}
+.container .form .code #code {
+    width: 289px;
+    margin-left: -4px;
+}
+.container .form .code #btn {
+    margin-left: 14px;
+    width: 103px;
+    background-color: rgba(127,74,136,1);
+}
+.container .form #register a{
+    display: block;
+    color: rgba(255,255,255,0.7);
+    font-size: 16px;
+    padding-top: 17px;
+}
+.title_fp span{
+    font-size: 24px;
+    color: #FFFFFF;
+}
+.container .con_footer {
+    position: absolute;
+    width: 100%;
+    height: 5.9%;
+    right: 0;
+    bottom: 0;
+    border-top: 2px solid #FFFFFF;
+    text-align: center;
+}
+.container .con_footer .CopyRight {
+    /*!*position: absolute;*!   problem1*/
+    /*display: block;*/
+    /*line-height: 18px;*/
+    /*height: 18px; 数据简直有问题*/
+    font-family: PingFangSC-Regular;
+    font-size: 13px;
+    color: #FFFFFF;
+    /*margin-top: 20px;*/
+    width: 488px;
+    height: 60px;
+    line-height: 60px;
+    letter-spacing: 0;
+}

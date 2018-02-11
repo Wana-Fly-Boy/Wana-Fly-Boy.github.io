@@ -1,0 +1,309 @@
+body {
+    width: 100%;
+    /* height: 14400px; */
+}
+.container {
+    position: relative;
+    width: 100%;
+    /* height: 100%; */
+    /*margin: 10.4% 10.3% 1.8% 10.4%;*/
+}
+.container .con_header {
+    position: relative;
+    left: 0;
+    top: 0;
+    background-color: rgba(127,74,136,1);
+    height: 5.9%;
+    line-height: 60px;
+    width: 100%;
+    color: #FFFFFF;
+    /*opacity: 0.8;*/
+    box-shadow: 2px 2px 4px 0 rgba(0,0,0,0.20);
+}
+.container .con_header .guide {
+    /*float: left;*/
+    /*width: 100%;*/
+    height: 60px;
+    line-height: 60px;
+    /*overflow: hidden;*/
+}
+.container .con_header .guide .title_l {
+    width: 50%;
+    height: 60px;
+}
+.container .con_header .guide .title_r {
+    width: 50%;
+    height: 60px;
+}
+.container #t_APIS {
+    display: block;
+    width: 5.4%;
+    height: 2.5%;
+    margin-left: 5%;
+    font-size: 27px;
+    font-weight:bolder;
+}
+.container #t_line {
+    width: 0.1%;
+    height: 2.3%;
+    font-size: 27px;
+    margin-left: 5%;
+    /*margin-top: 1%;*/
+}
+.container #t_read {
+    display: inline-block;
+    margin-left: 2.3%;
+    /*margin-top: 1.4%;*/
+    width: 13%;
+    height: 3.2%;
+    /*line-height: 3.2%;*/
+    font-family: myFont;
+    font-size: 24px;
+    letter-spacing: 0;
+}
+.container .guide #icon {
+    position: absolute;
+    top: 17px;
+    right: 380px;
+    border-radius: 50%;
+}
+.container .guide #name {
+    position: absolute;
+    top: 4px;
+    right: 270px;
+}
+.container .guide #animation {
+    width: 13px;
+    height: 13px;
+    position: absolute;
+    top: 27px;
+    right: 230px;
+}
+.container .guide #up {
+    position: absolute;
+    transition: all .5s;
+}
+.container .guide #animation:hover #up{
+    transform: rotateZ(-180deg)
+}
+.container .guide #tag {
+    visibility: hidden;
+    opacity: 0;
+    transition: all .5s;
+}
+.container .guide #animation:hover #tag {
+    visibility: visible;
+    opacity: 1;
+}
+.container .guide #write {
+    position: absolute;
+    top: 19px;
+    right: 130px;
+    width: 27px;
+    height: 27px;
+}
+.container .guide #w_article {
+    position: absolute;
+    top: 3px;
+    right: 70px;
+    color:#FFFFFF;
+}
+.test_triangle_border{
+    margin-left: -103px;
+    position: relative;
+    z-index: 2;
+}
+
+.test_triangle_border a{
+    color: #222629;
+    text-decoration:none;
+ }
+.test_triangle_border .popup{
+    width:100px;
+    background:#FFFFFF;
+    padding:10px 7px;
+    color:#F2EEF3;
+    border-radius:4px;
+    position:absolute;
+    top:30px;
+    left:30px;
+    border:1px solid #F2EEF3;
+}
+.test_triangle_border .popup span{
+    display:block;
+    width:0;
+    height:0;
+    border-width:0 10px 10px;
+    border-style:solid;
+    border-color:transparent transparent #F2EEF3;
+    position:absolute;
+    top:-10px;
+    left:70%;/* 三角形居中显示 */
+    margin-left:-10px;/* 三角形居中显示 */
+}
+.test_triangle_border .popup em{
+    display:block;
+    width:0;
+    height:0;
+    border-width:0 10px 10px;
+    border-style:solid;
+    border-color:transparent transparent #FFFFFF;
+    position:absolute;
+    top:1px;
+    left:-10px;
+}
+.test_triangle_border .popup li {
+    height: 30px;
+    padding: 5px;
+    line-height: 30px;
+    font-size: 13px;
+    /*text-align: center;*/
+}
+.test_triangle_border .popup li a {
+    display: block;
+    margin-top: -34px;
+    margin-left: 24px;
+}
+
+.con_content {
+    margin-top: 60px;
+    width: 100%;
+    position: relative;
+    /* height: 88.2%; */
+}
+.con_content .box_ml {
+    margin-top: 4.4%;
+}
+.con_content .backTop {
+    position: fixed;
+    width: 3.1%;
+    height: 4.4%;
+    border-radius: 5px;
+    right: 10.4%;
+    bottom: 9.7%;
+}
+.con_content .part1 {
+    width: 69.3%;
+    height: 250px;
+    margin: 0 auto 2.2%;
+    /*margin: 4.4% auto;*/
+    /*margin-bottom: -2.2%;*/
+    overflow: hidden;
+    background: #FFFFFF;
+    border: 1px solid #F0E9F1;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12), 0 0 6px 0 rgba(0,0,0,0.04);
+    border-radius: 2px;
+}
+.con_content .part1_img {
+    height: inherit;
+    display: block;
+    width: 391px;
+}
+.con_content .part1_con {
+    width: 55%;
+    height: 180px;
+    padding: 35px;
+}
+.con_content .part1_con_words .title_words {
+    /*font-family: PingFangSC-Regular;*/
+    font-family: myFont;
+    display: block;
+    font-size: 16px;
+    color: #222629;
+    letter-spacing: 0;
+    line-height: 22px;
+    width: 280px;
+    height: 22px;
+    margin-bottom: 20px;
+}
+.con_content .part1_con_words .title_con {
+    width: 100%;
+    height: 100px;
+    text-indent: 28px;
+    font-family: myFont;
+    font-size: 14px;
+    color: #222629;
+    letter-spacing: 0;
+    line-height: 24px;
+    overflow: hidden;
+}
+.con_content .part1_con .part1_con_tips {
+    width: 100%;
+    height: 36px;
+    line-height: 20px;
+    margin-top: 20px;
+}
+.con_content .part1_con .part1_con_tips .tips1 {
+    height: 36px;
+    line-height: 36px;
+    display: block;
+}
+.part1_con_tips .img_1 {
+    border-radius:50%;
+}
+.part1_con_tips .name_1 {
+    margin-left: 15px;
+    width: 140px;
+}
+.part1_con_tips .time_1 {
+    position: relative;
+    left: 10px;
+}
+.part1_con_tips .icon_1 {
+    margin-right: 7px;
+    margin-top: 9px;
+    border-radius: 50%;    
+}
+.part1_con_tips .star {
+    display: block;
+    margin-right: 20px;
+    width: 40px;
+}
+.part1_con_tips .img_saw {
+    float: right;    
+    margin-right: 7px;
+    margin-top: 11px;
+}
+.part1_con_tips .explore {
+    display: block;
+    float: right;
+    /* margin-right: 0px; */
+    width: 50px;    
+    /* margin-top: 34px; */
+}   
+.part1_con_tips .tips2 {
+    height: 36px;
+    line-height: 36px;
+}
+.container .loading {
+    width: 7%;
+    height: 3%;
+    margin: 1.2% auto;
+    color: rgba(34,38,41,0.4);
+    font-size: 16px;
+}
+.container .loading span {
+    display: block;
+    margin-top:-30px;
+    margin-left: 33px;
+}
+.container .con_footer {
+    position: relative;
+    width: 100%;
+    height: 5.9%;
+    right: 0;
+    bottom: 0;
+    border-top: 2px solid #7F4A88;
+    /* margin-left: 200px; */
+    text-align: center;
+}
+.container .con_footer .CopyRight {
+    font-family: myFont;
+    font-size: 13px;
+    color: #222629;
+    /*margin-top: 20px;*/
+    width: 488px;
+    height: 60px;
+    line-height: 60px;
+    letter-spacing: 0;
+}

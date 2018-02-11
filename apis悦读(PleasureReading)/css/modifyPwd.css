@@ -1,0 +1,152 @@
+body {
+    width: 100%;
+    height: 1000px;
+    background-color: #FFFFFF;
+}
+input::-webkit-input-placeholder {
+    color: rgba(34,38,41,0.8);
+    font-size: 14px;
+    letter-spacing: 0;
+    /*
+    font-size:14px;
+    color:#FFF;
+    */
+}
+input::-moz-placeholder {
+    color: rgba(34,38,41,0.8);
+    font-size: 14px;
+    letter-spacing: 0;
+    /*
+    font-size:14px;
+    color:#FFF;
+    */
+}
+.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.container .con_header {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgba(127,74,136,1);
+    height: 5.9%;
+    line-height: 60px;
+    width: 100%;
+    color: #FFFFFF;
+    /*opacity: 0.8;*/
+    box-shadow: 2px 2px 4px 0 rgba(0,0,0,0.20);
+}
+.container .con_header .guide {
+    /*float: left;*/
+    /*width: 100%;*/
+    height: 60px;
+    line-height: 60px;
+    overflow: hidden;
+}
+.container #t_APIS {
+    display: inline-block;
+    width: 5.4%;
+    height: 2.5%;
+    margin-left: 2.7%;
+    font-size: 27px;
+    font-weight: bolder;
+}
+.container #t_line {
+    width: 0.1%;
+    height: 2.3%;
+    font-size: 27px;
+    margin-left: 1.3%;
+}
+.container #t_read {
+    display: inline-block;
+    margin-left: 2.3%;
+    /*margin-top: 1.4%;*/
+    width: 7.6%;
+    height: 3.2%;
+    /*line-height: 3.2%;*/
+    font-family: PingFangSC-Regular;
+    font-size: 24px;
+    letter-spacing: 0;
+}
+.container .con_content {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    height: 88.2%;
+}
+.title_fp span{
+    font-size: 24px;
+    color: #7F4A88;
+}
+.container .con_content .title_modify {
+    position: absolute;
+    margin: 70px 30%;
+    width: 40%;
+    padding-bottom: 17px;
+    border-bottom: 2px solid #7F4A88;
+}
+.container .con_content .title_modify span {
+    font-family: PingFangSC-Regular;
+    font-size: 16px;
+    color: #000000;
+    letter-spacing: 0;
+}
+.container .con_content .title_modify span span {
+    font-size: 14px;
+    font-weight: normal;
+}
+.container .con_content .form {
+    /*居中方案*/
+    position: absolute;
+    /*margin-top: -24.9%;*/
+    /*margin-left: -19.7%;*/
+    /*top: 50%;*/
+    /*left: 50%;*/
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 30%;
+    height: 44%;
+    padding: 50px;
+    /*opacity: 0.4;*/
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 15px;
+    text-align: center;
+}
+.container .form {
+    background: #FFFFFF;
+    border: 1px solid #F2EEF3;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12), 0 0 6px 0 rgba(0,0,0,0.05);
+    border-radius: 15px;
+}
+.container .form .reg_input {
+    text-align: center;
+    padding: 5px;
+}
+.container .form input{
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 5px;
+    text-indent: 7px;
+    width: 410px;
+    height: 42px;
+    margin-top: 18px;
+    background-color: transparent;
+    color: rgba(34,38,41,0.8);
+    font-size: 14px;
+}
+.container .form .code #code {
+    width: 289px;
+    margin-left: -4px;
+}
+.container .form .code #btn {
+    margin-left: 14px;
+    width: 103px;
+    background-color: rgba(127,74,136,1);
+    color: #FFFFFF;
+}
+
